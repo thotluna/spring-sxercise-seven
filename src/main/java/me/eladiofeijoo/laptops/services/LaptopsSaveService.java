@@ -8,11 +8,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 @Service
-public class LaptopSaveService {
+public class LaptopsSaveService {
     private final LaptopsRepository repository;
-    private final Logger log = LoggerFactory.getLogger(LaptopSaveService.class);
+    private final Logger log = LoggerFactory.getLogger(LaptopsSaveService.class);
 
-    public LaptopSaveService(LaptopsRepository repository) {
+    public LaptopsSaveService(LaptopsRepository repository) {
         this.repository = repository;
     }
 
