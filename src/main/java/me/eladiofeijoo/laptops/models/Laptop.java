@@ -38,4 +38,16 @@ public class Laptop {
     public Integer getRam() {
         return ram;
     }
+
+    public void setManufacturer(String manufacturer) {
+        this.manufacturer = manufacturer;
+    }
+
+    public void setInches(Integer inches) {
+        this.inches = inches;
+    }
+
+    public void setRam(Integer ram) {
+        this.ram = ram;
+    }
 }

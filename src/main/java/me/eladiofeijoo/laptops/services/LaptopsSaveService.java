@@ -1,7 +1,7 @@
 package me.eladiofeijoo.laptops.services;
 
 import me.eladiofeijoo.laptops.data.LaptopsRepository;
-import me.eladiofeijoo.laptops.exceptions.BadRequest;
+import me.eladiofeijoo.laptops.exceptions.LaptopBadRequest;
 import me.eladiofeijoo.laptops.models.Laptop;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,13 +16,13 @@ public class LaptopsSaveService {
         this.repository = repository;
     }
 
-    public Laptop execute(Laptop laptop) throws BadRequest{
+    public Laptop execute(Laptop laptop) throws LaptopBadRequest {
         assert laptop != null;
 
         if(validate(laptop)) {
             String message = "Please, validate information sent";
             log.warn(message);
-            throw new BadRequest(message);
+            throw new LaptopBadRequest(message);
         }
         return repository.save(laptop);
     }
