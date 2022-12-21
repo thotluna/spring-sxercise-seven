@@ -26,6 +26,16 @@ public class AppController {
         return "Help: " + getCurrentUrl(req) + path;
     }
 
+    @GetMapping("/user")
+    public String welcomeUser(){
+        return "welcome user";
+    }
+
+    @GetMapping("/admin")
+    public String welcomeAdmin(){
+        return "welcome admin";
+    }
+
     private String getCurrentUrl(HttpServletRequest request){
         try{
             URL url = new URL(request.getRequestURL().toString());
