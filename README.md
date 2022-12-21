@@ -16,3 +16,9 @@ The following libraries are used to achieve the objective.
 - springfox-boot-starter
     
 An attempt was made to carry out the project with String Boot 3.0, but there was incompatibility with Swagger Springfox, so the Spring Boot version was lowered to 2.5.5 as the course example had been carried out
+
+## Exercises session 10, 11, 12.
+
+- create laptops.jar and run from terminal ok
+- deploy app in Heroku
+- add WebSecurity and add 2 user (user and admin)
