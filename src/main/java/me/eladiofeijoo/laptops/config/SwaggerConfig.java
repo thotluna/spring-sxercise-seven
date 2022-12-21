@@ -30,7 +30,7 @@ public class SwaggerConfig {
                 "Library Api rest docs",
                 "1.0",
                 "http://www.google.com",
-                new Contact("Alan", "http://www.google.com", "alan@example.com"),
+                new Contact("Thot", "http://www.google.com", "alan@example.com"),
                 "MIT",
                 "http://www.google.com",
                 Collections.emptyList());
